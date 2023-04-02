@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+                body{
+                    background-image: linear-gradient(to right, rgb(238, 116, 136), gray, rgb(238, 116, 136));
+                }
+                .box{
+                    position: fixed;
+                    width: 280px;
+                    height: 140px;
+                    background: radial-gradient(circle at 50% 50%, red 0%, yellow 60%, rgb(187, 124, 7));
+                    border: 1px solid transparent;
+                    left: 30%;
+                    margin-top: 20%;
+                    animation: name duration timing-function delay iteration-count direction fill-mode;
+                    animation: demo 1.5s ease-in  infinite alternate-reverse, demo2 1.5s ease-in infinite;
+                    transform-origin: bottom right;
+                    
+                }
+
+                .box h1{
+                    color:aliceblue;
+                    padding: 0px 0px 20px 35px;
+                    font-family: cursive;
+                    font-size: 50px;
+                    rotate: -25deg;
+                    background: linear-gradient(to right, purple, indigo);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    text-shadow: 6px 5px 5px rgb(0, 0, 0, .5);
+                }
+
+                @keyframes demo{
+                    0% {transform: rotate(0deg);}
+                    /* 50% {transform: rotate(45deg);} */
+                    100% {transform: rotate(90deg);}
+                    position: static;
+                }
+
+                /* @keyframes demo2{
+                    0%{border-radius: 0;}
+                    50% {border-radius: 30%;}
+                    100% {border-radius: 50%;}
+                }  */
+
+
+        </style>
+    </head>
+    <body>
+        <div class="box"><h1>Shraddha</h1></div>
+    </body>
+</html>
